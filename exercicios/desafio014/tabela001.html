@@ -13,7 +13,7 @@
             height: 300px;
             border-collapse: collapse;
         }
-        thead, tfoot {
+        thead {
             background-color: gray;
             color: white;
         }
@@ -21,11 +21,21 @@
             background-color: gray;
             color: white;
         }
+        tr#head > th {
+            text-align: left;
+        }
         td, th {
             border: 1px solid black;
             padding: 8px;
             text-align: center;
             vertical-align: middle;
+        }
+        tfoot {
+            background-color: gray;
+            color: white;
+        }
+        tfoot > tr > th {
+            text-align: left;
         }
     </style>
 </head>
